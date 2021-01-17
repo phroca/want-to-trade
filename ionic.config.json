@@ -1,0 +1,7 @@
+{
+  "name": "want-to-trade",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
