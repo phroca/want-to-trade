@@ -1,0 +1,122 @@
+<ion-header translucent>
+    <ion-toolbar style="--border-style: none !important;">
+
+        <ion-button slot="start" fill="clear" (click)="dismissModal()">
+            <ion-icon name="chevron-back"></ion-icon>
+        </ion-button>
+
+        <ion-button fill="clear" slot="end">
+            <ion-icon name="heart" color="red"></ion-icon>
+        </ion-button>
+
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-slides pager="false" [options]="slideShoesOpts">
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img [src]="shoe.photo">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img [src]="shoe.photo">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img [src]="shoe.photo">
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+    </ion-slides>
+    <div class="detail-bg" style="border-radius: 20px 20px 0 0;margin-top: 4rem;min-height: 450px">
+        <div>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item style="--border-style: none !important; --background: transparent;">
+                            <ion-label slot="start" class="font-text" style="overflow:visible;font-size: 16px;font-weight: bold; color: white;">{{shoe.name}}</ion-label>
+
+                            <ion-label slot="end" class="font-text" style="overflow:visible;font-size: 40px;color: white; background-color: transparent;">{{shoe.price}}</ion-label>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-item style="--border-style: none !important; --background: transparent;">
+                            <ion-text class="font-text" style="color: white;overflow:visible; --min-height: 150px">
+                                {{shoe.description}}
+                            </ion-text>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="pb-0">
+                    <ion-col class="pb-0">
+                        <ion-item style="--border-style: none !important; --background: transparent;">
+                            <ion-label slot="start" class="font-text" style="overflow:visible;font-size: 10px;color: white">SIZE</ion-label>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="pt-0">
+
+                    <ion-col>
+                        <ion-slides pager="false" [options]="slideSizeOpts">
+                            <ion-slide>
+                                <ion-grid>
+                                    <ion-row>
+                                        <ion-col>
+                                            <ion-button fill="outline" color="light">
+                                                <span class="font-text">6</span>
+                                            </ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-slide>
+                            <ion-slide>
+                                <ion-grid>
+                                    <ion-row>
+                                        <ion-col>
+                                            <ion-button fill="outline" color="light">
+                                                <span class="font-text">7</span>
+                                            </ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-slide>
+                            <ion-slide>
+                                <ion-grid>
+                                    <ion-row>
+                                        <ion-col>
+                                            <ion-button fill="outline" color="light">
+                                                <span class="font-text">8</span>
+                                            </ion-button>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-slide>
+                        </ion-slides>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-button class="button-cart" style="border-radius: 25%; width: 100%;" color="light">
+                        <ion-icon name="cart-outline" style="color: #3a7bd5;"></ion-icon>
+                        <span class="font-text" style="color: #3a7bd5;">AJOUTER AU PANIER</span>
+                    </ion-button>
+                </ion-row>
+            </ion-grid>
+        </div>
+
+    </div>
+</ion-content>
