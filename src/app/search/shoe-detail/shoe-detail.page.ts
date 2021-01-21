@@ -21,24 +21,13 @@ export class ShoeDetailPage implements OnInit {
         type: 'bullets',
       }
     };
-
-    slideSizeOpts = {
-      initialSlide: 0,
-      speed: 400,
-      slidesPerView: 5,
-      spaceBetween: 0,
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-      }
-    };
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {
   }
 
-  dismissModal() {
-    this.modalController.dismiss({
+  async dismissModal() {
+    await this.modalController.dismiss({
       dismissed: true
     });
   }

@@ -12,7 +12,7 @@
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-slides pager="false" [options]="slideShoesOpts">
+    <ion-slides pager="true" [options]="slideShoesOpts">
         <ion-slide>
             <ion-grid>
                 <ion-row>
@@ -70,53 +70,33 @@
                     </ion-col>
                 </ion-row>
                 <ion-row class="pt-0">
-
                     <ion-col>
-                        <ion-slides pager="false" [options]="slideSizeOpts">
-                            <ion-slide>
-                                <ion-grid>
-                                    <ion-row>
-                                        <ion-col>
-                                            <ion-button fill="outline" color="light">
-                                                <span class="font-text">6</span>
-                                            </ion-button>
-                                        </ion-col>
-                                    </ion-row>
-                                </ion-grid>
-                            </ion-slide>
-                            <ion-slide>
-                                <ion-grid>
-                                    <ion-row>
-                                        <ion-col>
-                                            <ion-button fill="outline" color="light">
-                                                <span class="font-text">7</span>
-                                            </ion-button>
-                                        </ion-col>
-                                    </ion-row>
-                                </ion-grid>
-                            </ion-slide>
-                            <ion-slide>
-                                <ion-grid>
-                                    <ion-row>
-                                        <ion-col>
-                                            <ion-button fill="outline" color="light">
-                                                <span class="font-text">8</span>
-                                            </ion-button>
-                                        </ion-col>
-                                    </ion-row>
-                                </ion-grid>
-                            </ion-slide>
-                        </ion-slides>
+                        <ion-item style="--border-style: none !important; --background: transparent;">
+                            <ion-buttons>
+                                <ion-button fill="outline" color="light" style="--border-radius: 25%; height: 32px; width: 32px;">
+                                    <span class="font-text">6</span>
+                                </ion-button>
+                                <ion-button fill="outline" color="light" style="--border-radius: 25%; height: 32px; width: 32px;">
+                                    <span class="font-text">7</span>
+                                </ion-button>
+                                <ion-button fill="outline" color="light" style="--border-radius: 25%; height: 32px; width: 32px;">
+                                    <span class="font-text">8</span>
+                                </ion-button>
+                            </ion-buttons>
+                        </ion-item>
                     </ion-col>
                 </ion-row>
                 <ion-row>
-                    <ion-button expand="block" shape="round" style="width: 100%;" color="light">
-                        <ion-icon name="cart-outline" style="color: #3a7bd5;"></ion-icon>
-                        <span class="font-text" style="color: #3a7bd5;">AJOUTER AU PANIER</span>
-                    </ion-button>
+                    <ion-col>
+                        <ion-item style="--border-style: none !important; --background: transparent;">
+                            <ion-button expand="block" style="--border-radius: 10px; width: 100%; height: 32px;" color="light">
+                                <ion-icon name="cart-outline" style="color: #3a7bd5;"></ion-icon>
+                                <span class="font-text" style="color: #3a7bd5;">AJOUTER AU PANIER</span>
+                            </ion-button>
+                        </ion-item>
+                    </ion-col>
                 </ion-row>
             </ion-grid>
         </div>
-
     </div>
 </ion-content>
